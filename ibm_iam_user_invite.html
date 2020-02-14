@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ibm_iam_user_invite – Configure IBM Cloud ‘ibm_iam_user_invite’ resource &#8212; ansible-ibm-docs  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ibm_iam_user_policy – Configure IBM Cloud ‘ibm_iam_user_policy’ resource" href="ibm_iam_user_policy.html" />
+    <link rel="prev" title="ibm_iam_service_policy_info – Retrieve IBM Cloud ‘ibm_iam_service_policy’ resource" href="ibm_iam_service_policy_info.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ibm_iam_user_policy.html" title="ibm_iam_user_policy – Configure IBM Cloud ‘ibm_iam_user_policy’ resource"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ibm_iam_service_policy_info.html" title="ibm_iam_service_policy_info – Retrieve IBM Cloud ‘ibm_iam_service_policy’ resource"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ansible-ibm-docs  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ibm-iam-user-invite-configure-ibm-cloud-ibm-iam-user-invite-resource">
+<h1>ibm_iam_user_invite – Configure IBM Cloud ‘ibm_iam_user_invite’ resource<a class="headerlink" href="#ibm-iam-user-invite-configure-ibm-cloud-ibm-iam-user-invite-resource" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#synopsis" id="id1">Synopsis</a></p></li>
+<li><p><a class="reference internal" href="#requirements" id="id2">Requirements</a></p></li>
+<li><p><a class="reference internal" href="#parameters" id="id3">Parameters</a></p></li>
+</ul>
+</div>
+<div class="section" id="synopsis">
+<h2><a class="toc-backref" href="#id1">Synopsis</a><a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>Create, update or destroy an IBM Cloud ‘ibm_iam_user_invite’ resource</p>
+</div>
+<div class="section" id="requirements">
+<h2><a class="toc-backref" href="#id2">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>The below requirements are needed on the host that executes this module.</p>
+<ul class="simple">
+<li><p>IBM-Cloud terraform-provider-ibm v1.2.1</p></li>
+<li><p>Terraform v0.12.20</p></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h2><a class="toc-backref" href="#id3">Parameters</a><a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="simple">
+<dt>users (False, list, None)</dt><dd><p>(Required for new resource) List of ibm id or email of user</p>
+</dd>
+<dt>access_groups (False, list, None)</dt><dd><p>access group ids to associate the inviting user</p>
+</dd>
+<dt>iam_policy (False, list, None)</dt><dd><p>None</p>
+</dd>
+<dt>classic_infra_roles (False, list, None)</dt><dd><p>None</p>
+</dd>
+<dt>cloud_foundry_roles (False, list, None)</dt><dd><p>None</p>
+</dd>
+<dt>id (False, str, None)</dt><dd><p>(Required when updating or destroying existing resource) IBM Cloud Resource ID.</p>
+</dd>
+<dt>state (False, any, available)</dt><dd><p>State of resource</p>
+</dd>
+<dt>ibmcloud_api_key (True, any, None)</dt><dd><p>The API Key used for authentification. This can also be provided via the environment variable ‘IC_API_KEY’.</p>
+</dd>
+<dt>ibmcloud_region (False, any, us-south)</dt><dd><p>Denotes which IBM Cloud region to connect to</p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="section" id="authors">
+<h3>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Jay Carman (&#64;jaywcarman)</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ibm_iam_user_invite – Configure IBM Cloud ‘ibm_iam_user_invite’ resource</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#parameters">Parameters</a><ul>
+<li><a class="reference internal" href="#authors">Authors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ibm_iam_service_policy_info.html"
+                        title="previous chapter">ibm_iam_service_policy_info – Retrieve IBM Cloud ‘ibm_iam_service_policy’ resource</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ibm_iam_user_policy.html"
+                        title="next chapter">ibm_iam_user_policy – Configure IBM Cloud ‘ibm_iam_user_policy’ resource</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ibm_iam_user_invite.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ibm_iam_user_policy.html" title="ibm_iam_user_policy – Configure IBM Cloud ‘ibm_iam_user_policy’ resource"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ibm_iam_service_policy_info.html" title="ibm_iam_service_policy_info – Retrieve IBM Cloud ‘ibm_iam_service_policy’ resource"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ansible-ibm-docs  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, IBM.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.1.
+    </div>
+  </body>
+</html>
